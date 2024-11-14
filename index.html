@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Flex Order</title>
+</head>
+<body>
+    <style>
+        .flex-container{
+            display: flex;
+            width: 100%;
+            gap: 10px;
+        }
+        .flex-container>div{
+            color: #fff;
+            padding: 10px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flex-child1{
+            background-color: #ff5733;
+            order: 4;
+        }
+        .flex-child2{
+            background-color: #33b5ff;
+            order: 5;
+        }
+        .flex-child3{
+            background-color: #33ff88;
+            order: 3;
+        }
+        .flex-child4{
+            background-color: #ff33cc;
+            order: 2;
+        }
+        .flex-child5{
+            background-color: #ffaa33;
+            order: 1;
+        }
+
+
+    </style>
+    <div class="flex-container">
+        <div class="flex-child1">Child-1</div>
+        <div class="flex-child2">Child-2</div>
+        <div class="flex-child3">Child-3</div>
+        <div class="flex-child4">Child-4</div>
+        <div class="flex-child5">Child-5</div>
+      </div>
+      
+</body>
+</html>
+
+<!-- Objective: Experiment with the order property to change the visual order of flex children.
+ - Create a div container with five child div elements. 
+ - Change the visual order of the children by assigning different order values to each child. -->
